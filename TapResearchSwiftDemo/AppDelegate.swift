@@ -8,11 +8,6 @@
 import UIKit
 import TapResearchSDK
 
-//let tapResearchApiToken: String = "API_TOKEN"
-//let tapResearchPlacementIdentifier: String = "PLACEMENT_IDENTIFIER"
-//
-//let userIdentifier: String = "<User Identifier>"
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
