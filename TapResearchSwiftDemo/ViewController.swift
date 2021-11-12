@@ -9,7 +9,7 @@ import UIKit
 import TapResearchSDK
 
 class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRewardDelegate, TapResearchPlacementDelegate {
-
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var surveyButton: UIButton!
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
     
     var apiToken = "7d08c962b40ac7aa0cf83c4d376fa36f"
     var uniqueIdentifier = "Nascar"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +27,8 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
         
         self.initSDK()
     }
-
+    
+//SDK must be initialized with an api token and uniqueIdentifier
     func initSDK() {
         TapResearch.initWithApiToken(apiToken, rewardDelegate: self, placementDelegate: self)
         TapResearch.setUniqueUserIdentifier(uniqueIdentifier)
@@ -40,7 +41,7 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
             } completion: { _ in
                 self.surveyButton.alpha = 1.0
                 self.activityIndicator.stopAnimating()
-            }            
+            }
         }
     }
     
@@ -50,15 +51,17 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
         alertController.addAction(alertOkAction)
         present(alertController, animated: true, completion: nil)
     }
-
+    
     //MARK:- Actions and button handlers
     
+    // present survey wall when surveys are available
     @IBAction func handleSurveySelected() {
         tapResearchPlacement?.showSurveyWall(with: self)
     }
     
     //MARK:- TapResearch Delegates
     
+    // When the TapResearch modal is dismissed, this method is called with an array of TRReward to be used within your app
     func tapResearchDidReceive(_ rewards: [TRReward]) {
         print("Reward Received!")
         
@@ -68,6 +71,7 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
         }
     }
     
+    // After the SDK is initialized, this delegate is called for each placement
     func placementReady(_ placement: TRPlacement) {
         if tapResearchPlacement == nil && placement.isSurveyWallAvailable {
             tapResearchPlacement = placement
@@ -75,23 +79,22 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
         }
     }
     
+    // If the placement is not available for any reason, this delegate is called
     func placementUnavailable(_ placementId: String) {
         print("Placement Unavailable")
     }
     
     //MARK:- TapResearchSurveyDelegate
-
+    
+    // This delegate is called when the survey wall is opened
     func tapResearchSurveyWallOpened(with placement: TRPlacement) {
         print("Survey wall opened")
     }
-
-    func tapResearchSurveyWallDismissed(with placement: TRPlacement) {
     
+    // This delegate is called when the survey wall is dismissed
+    func tapResearchSurveyWallDismissed(with placement: TRPlacement) {
         print("Survey wall dismissed")
-        
-        // TRPlacemnt will be disabled after the survey wall was visible.
-        // If you want to show the placement again you'll have to initialize it again
-        initSDK()
+        tapResearchPlacement = nil
     }
 }
 
