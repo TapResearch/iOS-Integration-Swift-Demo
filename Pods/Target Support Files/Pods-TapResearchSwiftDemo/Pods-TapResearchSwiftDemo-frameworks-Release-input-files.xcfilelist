@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-TapResearchSwiftDemo/Pods-TapResearchSwiftDemo-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/TapResearch-Internal/TapResearchSDK.framework/TapResearchSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TapResearch/TapResearchSDK.framework/TapResearchSDK
