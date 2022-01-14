@@ -22,11 +22,10 @@
                                 <color key="color" systemColor="systemBlueColor"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-iv-7LV">
-                                <rect key="frame" x="107" y="428" width="200" height="50"/>
+                                <rect key="frame" x="100" y="428" width="214" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="goq-W6-eTS"/>
-                                    <constraint firstAttribute="width" constant="200" id="vyt-P0-uqX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Tap to take survey">
@@ -41,6 +40,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FOY-iv-7LV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CCg-jP-Vl7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOY-iv-7LV" secondAttribute="trailing" constant="100" id="FQg-sP-lqn"/>
                             <constraint firstItem="FOY-iv-7LV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J3W-Np-uS0"/>
                             <constraint firstItem="VNZ-cc-cut" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MPb-yO-ESp"/>
                             <constraint firstItem="VNZ-cc-cut" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qfw-p9-bna"/>
