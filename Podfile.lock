@@ -1,16 +1,16 @@
 PODS:
-  - TapResearch (2.1.3)
+  - TapResearch (2.4.1)
 
 DEPENDENCIES:
-  - TapResearch (= 2.1.3)
+  - TapResearch (= 2.4.1)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs:
+  trunk:
     - TapResearch
 
 SPEC CHECKSUMS:
-  TapResearch: f505d972168ed03c12eba13ded14c7e95870d947
+  TapResearch: 727f362216e7e15e53fbf25217a4c4522cbfa9cd
 
-PODFILE CHECKSUM: 0128dc12c8f557da88ddd1a857280f2c11b664e4
+PODFILE CHECKSUM: 10b53bc930a94ad2e741518aa5f44170d8fcad68
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2
