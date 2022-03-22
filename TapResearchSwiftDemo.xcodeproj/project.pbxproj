@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36ABDA902065A78260FD2324 /* Pods_TapResearchSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81E9327BEBF66704BD82897 /* Pods_TapResearchSwiftDemo.framework */; };
 		76AE4741257F0B610064A73F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76AE4740257F0B610064A73F /* README.md */; };
 		76DEC398257EAD5E00BF1857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEC397257EAD5E00BF1857 /* AppDelegate.swift */; };
 		76DEC39A257EAD5E00BF1857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEC399257EAD5E00BF1857 /* SceneDelegate.swift */; };
@@ -44,6 +45,7 @@
 		979F79D39747B96A43953883 /* Pods-TapResearchSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapResearchSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-TapResearchSwiftDemo/Pods-TapResearchSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A697E6E8273C57E2007AC2EB /* TapResearchSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TapResearchSDK.xcframework; sourceTree = "<group>"; };
 		A69F6BD9273DAE20009FF913 /* TapResearchSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TapResearchSDK.xcframework; path = Pods/TapResearch/TapResearchSDK.xcframework; sourceTree = "<group>"; };
+		A81E9327BEBF66704BD82897 /* Pods_TapResearchSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapResearchSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69F6BDA273DAE20009FF913 /* TapResearchSDK.xcframework in Frameworks */,
+				36ABDA902065A78260FD2324 /* Pods_TapResearchSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A69F6BD9273DAE20009FF913 /* TapResearchSDK.xcframework */,
+				A81E9327BEBF66704BD82897 /* Pods_TapResearchSwiftDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
