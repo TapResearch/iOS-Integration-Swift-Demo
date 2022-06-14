@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var surveyButton: UIButton!
     
-    var apiToken = "7d08c962b40ac7aa0cf83c4d376fa36f"
-    var uniqueIdentifier = "Nascar"
+    var apiToken = "<Your API Key>"
+    var uniqueIdentifier = "<UserIdentifier>"
     var placements: [String:TRPlacement] = [:]
 
     //MARK: -
@@ -177,9 +177,7 @@ extension ViewController : TapResearchRewardDelegate {
             let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default, handler: nil)
             controller.addAction(action)
-            if let sceneDelegate = UIApplication.shared.windows[0].windowScene?.delegate as? SceneDelegate {
-                sceneDelegate.window?.rootViewController?.present(controller, animated: true)
-            }
+            self.present(controller, animated: true)
         }
     }
     
