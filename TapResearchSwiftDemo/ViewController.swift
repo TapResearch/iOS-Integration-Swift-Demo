@@ -15,8 +15,8 @@ class ViewController: UIViewController, TapResearchSurveyDelegate, TapResearchRe
     
     var tapResearchPlacement: TRPlacement?
     
-    var apiToken = "7d08c962b40ac7aa0cf83c4d376fa36f"
-    var uniqueIdentifier = "Nascar"
+    var apiToken = "<API_TOKEN>"
+    var uniqueIdentifier = "<player_identifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
