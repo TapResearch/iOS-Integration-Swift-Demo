@@ -60,7 +60,6 @@
 				76AE4740257F0B610064A73F /* README.md */,
 				76DEC396257EAD5E00BF1857 /* TapResearchSwiftDemo */,
 				76DEC395257EAD5E00BF1857 /* Products */,
-				EF3D3A2289175E0497B77D65 /* Pods */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -86,13 +85,6 @@
 				76DEC3A5257EAD5F00BF1857 /* Info.plist */,
 			);
 			path = TapResearchSwiftDemo;
-			sourceTree = "<group>";
-		};
-		EF3D3A2289175E0497B77D65 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
