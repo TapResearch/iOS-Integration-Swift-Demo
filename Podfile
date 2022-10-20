@@ -7,6 +7,6 @@ target 'TapResearchSwiftDemo' do
 
   # Pods for TapResearchSwiftDemo
 
-pod 'TapResearch', '2.5.0'
+pod 'TapResearch', '2.5.3'
 
 end
