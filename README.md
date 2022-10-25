@@ -20,16 +20,12 @@ $ pod install
 $ open TapResearchSwiftDemo.xcworkspace
 ~~~~~
 
-* If you want to see the app in action make sure you add your iOS api token and a user identifier in `AppDelegate.swift`
+* If you want to see the app in action make sure you add your iOS api token and a user identifier in `PlacementSelectorVC.swift`
 
 ~~~~swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    TapResearch.initWithApiToken(tapResearchApiToken, delegate: self)
-    TapResearch.setUniqueUserIdentifier(userIdentifier)
-
-    return true
-}
+    TapResearch.initWithApiToken(tapResearchApiToken, rewardDelegate: self, placementDelegate: self)
+    TapResearch.setUniqueUserIdentifier(uniqueUserIdentifier)
 
 ~~~~
 
