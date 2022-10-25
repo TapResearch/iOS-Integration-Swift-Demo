@@ -1,9 +1,9 @@
 //
 //  PlacementSelectorVC.swift
-//  Ivy
+//
 //
 //  Created by Jeroen Verbeek on 10/5/22.
-//  Copyright © 2022 Kevin Chang. All rights reserved.
+//  Copyright © 2022 TapResearch. All rights reserved.
 //
 
 import UIKit
@@ -129,6 +129,7 @@ extension PlacementSelectorVC : TapResearchPlacementDelegate {
     
 }
 
+//MARK: - TapResearchRewardDelegate
 extension PlacementSelectorVC : TapResearchRewardDelegate {
     
     func tapResearchDidReceive(_ rewards: [TRReward]) {

@@ -14,7 +14,6 @@ protocol PlacementCellDelegate {
 
 class PlacementCell: UITableViewCell {
     
-    
     @IBOutlet weak var placementLabel   : UILabel?
     @IBOutlet weak var eventDetailLabel : UILabel?
     @IBOutlet weak var eventButton      : UIButton?
@@ -67,4 +66,3 @@ class PlacementCell: UITableViewCell {
     }
     
 }
-
