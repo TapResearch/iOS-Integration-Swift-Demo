@@ -15,8 +15,8 @@ class PlacementSelectorVC : UIViewController,
                             UITableViewDelegate
 {
     
-    var tapResearchApiToken = "<API_TOKEN>"
-    var uniqueUserIdentifier = "<player_identifier>"
+    var tapResearchApiToken = "a5002bf6b3ed08e9b789b87a5c69e7fb"
+    var uniqueUserIdentifier = "public-demo-test-user"
     
     @IBOutlet weak var tableView    : UITableView!
     

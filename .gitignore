@@ -1,2 +1,6 @@
 .DS_Store
+TapResearchSwiftDemo.xcodeproj/xcuserdata/*
 xcuserdata/*
+Podfile.lock
+*.xcworkspace
+Pods
